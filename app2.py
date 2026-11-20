@@ -15,6 +15,44 @@ st.set_page_config(
 # ---------------- CUSTOM CSS ----------------
 st.markdown("""
 <style>
+/* Text Area */
+.stTextArea textarea {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: 2px solid #6366f1 !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+}
+
+.stTextArea textarea::placeholder {
+    color: #cbd5e1 !important;
+}
+
+/* Select Box */
+div[data-baseweb="select"] > div {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: 1px solid #6366f1 !important;
+}
+
+/* Predict Button */
+div.stButton > button {
+    background: linear-gradient(90deg, #2563eb, #9333ea) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    width: 100% !important;
+}
+
+/* Button Hover */
+div.stButton > button:hover {
+    background: linear-gradient(90deg, #7c3aed, #2563eb) !important;
+    color: white !important;
+    border: 2px solid white !important;
+}
 .stApp {
     background: linear-gradient(135deg, #101827, #172b46);
     color: white;
